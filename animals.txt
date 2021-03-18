@@ -1,0 +1,17 @@
+Cheetah,Mammal,Carnivore
+Caiman,Reptile,Carnivore
+Bear,Mammal,Omnivore
+Elk,Mammal,Herbivore
+Turtle,Reptile,Omnivore
+Lizard,Reptile,Omnivore
+Bobcat,Mammal,Carnivore
+Yak,Mammal,Herbivore
+Ibis,Bird,Carnivore
+Eagle,Bird,Carnivore
+Racoon,Mammal,Omnivore
+Emu,Bird,Omnivore
+Llama,Mammal,Herbivore
+Parrot,Bird,Herbivore
+Iguana,Reptile,Herbivore
+Ermine,Mammal,Carnivore
+Crocodile,Reptile,Carnivore
