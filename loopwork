@@ -1,0 +1,51 @@
+DailySales = [457.54, 65.14, 982.23, 124.38, 932.54, 712.87, 72.57, 401.12]
+runningtotal = 0
+for numbers in DailySales:
+    runningtotal += numbers
+#The min and the max are added together and subtracted from the running total.
+runningtotal -= (max(DailySales) + min(DailySales))    
+average1 = runningtotal / (len(DailySales) - 2)
+print("For loop using list name - Average is:  " + str(format(average1, '.2f')))
+runningtotal = 0
+for index in range(0, len(DailySales)):
+    runningtotal += DailySales[index]
+runningtotal -= (max(DailySales) + min(DailySales))
+average2 = runningtotal / (len(DailySales) - 2)
+print("For loop using range - Average is:  " + str(format(average2, '.2f')))
+
+budget = eval(input("\n\nEnter amount budgeted for the month: "))
+#I initialized the input spent to 1 instead of 0 to get the while loop to start. Later this is subtracted or added
+#back in depending on the budget.
+inputspent = 1
+totalspent = 0
+while inputspent != 0:
+   inputspent = eval(input("Enter an amount spent (0 to quit): "))
+   totalspent += inputspent
+print("\nBudgeted: $" + str(format(budget, '7.2f')))
+print("Spent: $" + str(format(totalspent, '7.2f')))
+difference = abs(budget - totalspent)
+if budget > totalspent:
+    totalspent -= 1
+    print("You are $" + str(format(difference, '7.2f')) + " UNDER budget.")
+elif budget < totalspent:
+    totalspent += 1
+    print("You are $" + str(format(difference, '7.2f')) + " OVER budget.")
+    
+speed = eval(input("\n\nEnter the speed of the vehicle in mph: "))
+hours = eval(input("Enter the number of hours traveled: "))
+print("\nHour\tDistance Traveled")
+print("------------------------")
+for traveling in range(1, hours + 1):
+    print(str(traveling) + "\t" + str(format(speed * traveling, '.1f')))
+
+numberinput = 0
+runningtotal = 0
+#Counter starts at -1 so that if a negative number is entered immediately, the counter reads 0.
+counter = -1
+print("\n")
+while numberinput >= 0:
+    runningtotal += numberinput
+    counter += 1
+    numberinput = eval(input("Enter a positive number (negative to quit): "))
+print("Total of " + str(counter) + " numbers = " + str(format(runningtotal, '.2f')))
+   
